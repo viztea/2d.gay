@@ -1,10 +1,5 @@
 import { z } from "zod"
 
-export const artist = z.object({
-    mbid: z.string(),
-    "#text": z.string(),
-});
-
 export const imageSize = z.union([
     z.literal("small"), 
     z.literal("medium"), 
@@ -15,6 +10,13 @@ export const imageSize = z.union([
 export const image = z.object({
     size: imageSize,
     "#text": z.string().url()
+});
+
+export const artist = z.object({
+    url: z.string(),
+    name: z.string(),
+    image: image.array(),
+    mbid: z.string(),
 });
 
 export const album = z.object({
@@ -40,7 +42,10 @@ export const track = z.object({
     name: z.string(),
     url: z.string().url(),
     date: date.optional(),
-    "@attr": trackAttr.optional()
+    "@attr": trackAttr.optional(),
+    loved: z.custom(data => data === "1" || data === "0")
+        .transform(data => data === "1")
+        .optional()
 });
 
 export const recentTracksAttr = z.object({

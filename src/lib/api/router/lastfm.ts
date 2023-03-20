@@ -10,6 +10,7 @@ async function fetchCurrentTrack(): Promise<Track | null> {
         api_key: env.LAST_FM_APIKEY,
         format: "json",
         limit: "1",
+        extended: "true"
     });
 
     const response = await fetch(`https://ws.audioscrobbler.com/2.0/?${query}`)
@@ -28,10 +29,14 @@ export const lastFmRouter = t.router({
     currentTrack: t.procedure
         .output(z.object({
             title: z.string(),
-            artist: z.string(),
+            artist: z.object({
+                url: z.string(),
+                name: z.string(),
+            }),
             album: z.string(),
             artwork: z.string().url().nullable(),
             url: z.string().url(),
+            loved: z.boolean()
         }).nullable())
         .query(async () => {
             const current = await fetchCurrentTrack();
@@ -41,10 +46,14 @@ export const lastFmRouter = t.router({
 
             return {
                 title:   current.name,
-                artist:  current.artist["#text"],
+                artist:  {
+                    name: current.artist.name,
+                    url: current.artist.url
+                },
                 album:   current.album["#text"],
                 artwork: current.image[current.image.length - 1]?.["#text"] ?? null,
                 url:     current.url,
+                loved:   current.loved ?? false
             }
         })
 });

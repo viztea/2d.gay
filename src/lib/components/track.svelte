@@ -27,10 +27,15 @@
             {/if}
         </div>
     {:else if $track.data}
-        <a href={$track.data.url} class="hover:underline">
-            <span class="font-semibold">{$track.data.title}</span> by
-            <span class="font-semibold">{$track.data.artist}</span>
-        </a>
+        <span class="flex items-center space-x-1">
+            <span>
+                <a class="font-semibold hover:underline" href={$track.data.url}>{$track.data.title}</a> by
+                <a class="font-semibold hover:underline" href={$track.data.artist.url}>{$track.data.artist.name}</a>
+            </span>
+            {#if $track.data.loved}
+                <Icon class="text-base text-red-400" icon="mdi:cards-heart" />
+            {/if}
+        </span>
     {:else}
         <div class="flex items-center space-x-2">
             <span>I'm not listening to anything right now.</span>
