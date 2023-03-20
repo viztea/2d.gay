@@ -13,7 +13,7 @@
 >
     <Track />
     <div class="flex items-center justify-between">
-        <span class="hover:text-zinc-100/90 select-none">
+        <span class="hover:text-zinc-100/90 transition ease-in-out select-none">
             melike2d &copy; 2018 - {date.getFullYear()}
         </span>
         <div class="flex space-x-2 items-center text-lg">
