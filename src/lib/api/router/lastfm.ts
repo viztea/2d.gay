@@ -3,39 +3,26 @@ import { type Track, recentTracks } from "$lib/tools/lastfm";
 import { z } from "zod";
 import { t } from "../trpc";
 
-let currentTrack: Track | null = null;
+async function fetchCurrentTrack(): Promise<Track | null> {
+    const query = new URLSearchParams({
+        method: "user.getrecenttracks",
+        user: env.LAST_FM_USERNAME,
+        api_key: env.LAST_FM_APIKEY,
+        format: "json",
+        limit: "1",
+    });
 
-async function fetchCurrentTrack() {
-    try {
-        const query = new URLSearchParams({
-            method: "user.getrecenttracks",
-            user: env.VITE_LAST_FM_USERNAME,
-            api_key: env.VITE_LAST_FM_APIKEY,
-            format: "json",
-            limit: "1",
-        });
-    
-        const response = await fetch(`https://ws.audioscrobbler.com/2.0/?${query}`)
-            .then(r => r.json())
-            .then(recentTracks.parse);
-    
-        const latest = response.recenttracks.track[0] ?? null;
-        if (latest?.["@attr"]?.nowplaying != true) {
-            currentTrack = null;
-            return;
-        }
-    
-        currentTrack = latest;
-    } catch (ex) {
-        console.error("Unable to fetch recent tracks:", ex);
-    }
+    const response = await fetch(`https://ws.audioscrobbler.com/2.0/?${query}`)
+        .then(r => r.json())
+        .then(recentTracks.parse);
+
+    const latest = response.recenttracks.track[0] ?? null;
+    return latest?.["@attr"]?.nowplaying != true
+        ? null
+        : latest;
 }
 
-// TODO: properly schedule this, maybe using upstash idk...
-
-/* every 5 minutes fetch the current track. */
-fetchCurrentTrack();
-setInterval(fetchCurrentTrack, 1000 * 60);
+// TODO: rate-limiting & caching...
 
 export const lastFmRouter = t.router({
     currentTrack: t.procedure
@@ -46,17 +33,18 @@ export const lastFmRouter = t.router({
             artwork: z.string().url().nullable(),
             url: z.string().url(),
         }).nullable())
-        .query(() => {
-            if (!currentTrack) {
+        .query(async () => {
+            const current = await fetchCurrentTrack();
+            if (!current) {
                 return null;
             }
 
             return {
-                title: currentTrack.name,
-                artist: currentTrack.artist["#text"],
-                album: currentTrack.album["#text"],
-                artwork: currentTrack.image[currentTrack.image.length - 1]?.["#text"] ?? null,
-                url: currentTrack.url,
+                title:   current.name,
+                artist:  current.artist["#text"],
+                album:   current.album["#text"],
+                artwork: current.image[current.image.length - 1]?.["#text"] ?? null,
+                url:     current.url,
             }
         })
 });
