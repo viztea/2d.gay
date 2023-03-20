@@ -16,16 +16,21 @@ __metadata:
     "@sveltejs/adapter-cloudflare": ^2.2.0
     "@sveltejs/kit": ^1.5.0
     "@tailwindcss/typography": ^0.5.9
+    "@tanstack/svelte-query": ^4.27.0
+    "@trpc/client": ^10.16.0
+    "@trpc/server": ^10.16.0
     "@types/cookie": ^0.5.1
     autoprefixer: ^10.4.14
     postcss: ^8.4.21
     svelte: ^3.54.0
     svelte-check: ^3.0.1
     tailwindcss: ^3.2.7
+    trpc-sveltekit: ^3.5.1
     tslib: ^2.4.1
     typescript: ^4.9.3
     vite: ^4.0.0
     wrangler: ^2.12.3
+    zod: ^3.21.4
   languageName: unknown
   linkType: soft
 
@@ -934,10 +939,44 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/query-core@npm:4.27.0":
+  version: 4.27.0
+  resolution: "@tanstack/query-core@npm:4.27.0"
+  checksum: 914b4f01ac75632f4603b650e9105f64c739b79250baf76aad16cee216f7bad6060c04eda0c70838fe61a5f6c17883e19fcc3075b2433a906539da95ce785796
+  languageName: node
+  linkType: hard
+
+"@tanstack/svelte-query@npm:^4.27.0":
+  version: 4.27.0
+  resolution: "@tanstack/svelte-query@npm:4.27.0"
+  dependencies:
+    "@tanstack/query-core": 4.27.0
+  peerDependencies:
+    svelte: ^3.54.0
+  checksum: 8909a40cd86bc7c5d8857e8ea457ef012e15ec74f8c476a74bcc1887e5335704e91ab61f979c4b08e8705fe1a06b6c85275edb8e41dc4b427da98542835aafee
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
   checksum: ad87447820dd3f24825d2d947ebc03072b20a42bfc96cbafec16bff8bbda6c1a81fcb0be56d5b21968560c5359a0af4038a68ba150c3e1694fe4c109a063bed8
+  languageName: node
+  linkType: hard
+
+"@trpc/client@npm:^10.16.0":
+  version: 10.16.0
+  resolution: "@trpc/client@npm:10.16.0"
+  peerDependencies:
+    "@trpc/server": 10.16.0
+  checksum: 7c4ed695ded4ae7a78b7b5c175aaec5e6904e5192c2be0544ee5c67a5913c53d5c71dd453ea059d0e8ab4b5dbeb3551732c0d0e11ab67ecc7d1947def07880f4
+  languageName: node
+  linkType: hard
+
+"@trpc/server@npm:^10.16.0":
+  version: 10.16.0
+  resolution: "@trpc/server@npm:10.16.0"
+  checksum: 3bfef1d1574f6544ee20e959806631812f4e6770dd52c92eac39c94f4686db750585ffabccb1945cdfb577312d1d12075a2a2d9717a731990ac405d289711ab1
   languageName: node
   linkType: hard
 
@@ -3406,6 +3445,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"trpc-sveltekit@npm:^3.5.1":
+  version: 3.5.1
+  resolution: "trpc-sveltekit@npm:3.5.1"
+  peerDependencies:
+    "@sveltejs/adapter-node": ^1.2.0
+    "@trpc/client": ^10.16.0
+    "@trpc/server": ^10.16.0
+    "@types/ws": ^8.5.4
+    ws: ^8.12.0
+  checksum: f59ee21a0e6966776be056232c6f6dca66c37dd4d7e7f4230521384dfcc6146f60ac84a21b4092de7b45bb4ff2ef9959570af2892f34eed87884275aef33ce45
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^2.4.1":
   version: 2.5.0
   resolution: "tslib@npm:2.5.0"
@@ -3675,5 +3727,12 @@ __metadata:
     mustache: ^4.2.0
     stack-trace: 0.0.10
   checksum: e81644ad9469a26949a85cb2e1a3f9c9faf11daa67a265e9ad0361942b2c06cf02ee1dc8c85d74fe7ad25d35bbc2fee34717a54c5a0b8eeb82dc9276d139906b
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.21.4":
+  version: 3.21.4
+  resolution: "zod@npm:3.21.4"
+  checksum: f185ba87342ff16f7a06686767c2b2a7af41110c7edf7c1974095d8db7a73792696bcb4a00853de0d2edeb34a5b2ea6a55871bc864227dace682a0a28de33e1f
   languageName: node
   linkType: hard
