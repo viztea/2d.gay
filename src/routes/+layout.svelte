@@ -10,7 +10,7 @@
 </script>
 
 <QueryClientProvider client={data.queryClient}>
-    <div class="flex h-screen py-14">
+    <div class="flex py-14">
         <div class="mx-auto px-4 max-w-[535px]">
             <slot />
 

@@ -1,31 +1,34 @@
 <script>
     import { languages, projects, email, discord } from "./about";
 
+    /* components */
     import Icon from "@iconify/svelte";
     import Seo from "../lib/components/seo.svelte";
 </script>
 
 <Seo title="home" />
 
-<div class="space-y-4">
-    <div class="flex space-x-4 items-center">
-        <img src="/img.avif" alt="logo-ish?" class="w-16 h-16 rounded-full" />
-        <div class="flex flex-col">
-            <h1 class="font-black text-lg sm:text-xl md:text-2xl lg:text-3xl text-white">Gino</h1>
-            <span class="text-zinc-100 text-sm sm:text-base">A full-stack developer from California.</span>
+<div class="space-y-8">
+    <section class="space-y-4">
+        <div class="flex space-x-4 items-center">
+            <img src="/img.avif" alt="logo-ish?" class="w-16 h-16 rounded-full" />
+            <div class="flex flex-col">
+                <h1 class="font-black text-lg sm:text-xl md:text-2xl lg:text-3xl text-white">Gino</h1>
+                <span class="text-zinc-100 text-sm sm:text-base">A full-stack developer from California.</span>
+            </div>
         </div>
-    </div>
-
-    <p>
-        I've been coding since I was <strong>13</strong>. My primary 
-        languages are Kotlin and TypeScript, but I also use Go and Rust.
-    </p>
-
-    <p>
-        I also do some web development with React, Vue, and Svelte. 
-        Want to know a fun fact? I've rewritten my portfolio almost 
-        a dozen times, rotating between HTML/CSS, <a href="https://www.gatsbyjs.com">Gatsby</a>, <a href="https://nextjs.org">Next.js</a>, and <a href="https://kit.svelte.dev">SvelteKit</a>.
-    </p>
+    
+        <p>
+            I've been coding since I was <strong>13</strong>. My primary 
+            languages are Kotlin and TypeScript, but I also use Go and Rust.
+        </p>
+    
+        <p>
+            I also do some web development with React, Vue, and Svelte. 
+            Want to know a fun fact? I've rewritten my portfolio almost 
+            a dozen times, rotating between HTML/CSS, <a href="https://www.gatsbyjs.com">Gatsby</a>, <a href="https://nextjs.org">Next.js</a>, and <a href="https://kit.svelte.dev">SvelteKit</a>.
+        </p>
+    </section>
 
     <section class="space-y-2">
         <h2 class="font-black text-xl mb-4">Projects</h2>
@@ -70,7 +73,7 @@
     </section>
 
     <section class="space-y-2">
-        <h2 class="font-black text-xl mb-4">Contact</h2>
+        <h2 class="font-black text-xl mb-2">Contact</h2>
 
         <p>
             If you need to contact me, I recommend joining my <a href={discord}>Discord server</a> for the quickest response.
