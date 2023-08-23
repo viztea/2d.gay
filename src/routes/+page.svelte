@@ -72,7 +72,8 @@
     <section class="space-y-2">
         <h2 class="font-black text-xl mb-2">Contact</h2>
 
-        <p>If you (for some reason) need to contact me, my email address is <a href="mailto:{email}">{email}</a>. If I do not know you I will not respond to your DMs.</p>
+        <p>If you (for some reason) need to contact me, my email address is <a href="mailto:{email}">{email}</a>.</p>
+        <p>P.S. If I do not know you I will not respond to your DMs</P
 
         <!--
         <p>
