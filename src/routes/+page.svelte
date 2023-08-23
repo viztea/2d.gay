@@ -19,11 +19,11 @@
         </div>
     
         <p>
-            I was born in California about 18 years ago but I've only been coding for ~5 years. I've mainly focused on creating Discord Applications but I've also my fair share of APIs, Websites, and open-source libraries.        
+            I was born in California about 18 years ago. Even though I have only been coding for ~5 years ,I've written my fair share of APIs, Websites, Discord Applications, and open-source libraries.        
         </p>
         
         <p>
-             JavaScript was my first language and I used it for a couple of years but Kotlin and TypeScript have since taken over my life {"<3"}. I do dabble in Golang and Rust though!
+             I used JavaScript for a couple of years until Kotlin and TypeScript took over my life {"<3"}. However, I do dabble in Golang and Rust :D
         </p>
     </section>
 
