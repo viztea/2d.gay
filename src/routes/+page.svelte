@@ -19,14 +19,11 @@
         </div>
     
         <p>
-            I've been coding since I was <strong>13</strong>. My primary 
-            languages are Kotlin and TypeScript, but I also use Go and Rust.
+            I was born in California about 18 years ago but I've only been coding for ~5 years. I've mainly focused on creating Discord Applications but I've also my fair share of APIs, Websites, and open-source libraries.        
         </p>
-    
+        
         <p>
-            I also do some web development with React, Vue, and Svelte. 
-            Want to know a fun fact? I've rewritten my portfolio almost 
-            a dozen times, rotating between HTML/CSS, <a href="https://www.gatsbyjs.com">Gatsby</a>, <a href="https://nextjs.org">Next.js</a>, and <a href="https://kit.svelte.dev">SvelteKit</a>.
+             JavaScript was my first language and I used it for a couple of years but Kotlin and TypeScript have since taken over my life <3. I do dabble in Golang and Rust though!
         </p>
     </section>
 
@@ -75,6 +72,9 @@
     <section class="space-y-2">
         <h2 class="font-black text-xl mb-2">Contact</h2>
 
+        <p>If you (for some reason) need to contact me, my email address is <a href="mailto:{email}">{email}</a>. If I do not know you I will not respond to your DMs.</p>
+
+        <!--
         <p>
             If you need to contact me, I recommend joining my <a href={discord}>Discord server</a> for the quickest response.
         </p>
@@ -82,6 +82,7 @@
         <p>
             However, you can always email me at <a href="mailto:{email}">{email}</a> but do not expect a quick response.
         </p>
+        -->
     </section>
 </div>
 
