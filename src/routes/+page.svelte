@@ -23,7 +23,7 @@
         </p>
         
         <p>
-             JavaScript was my first language and I used it for a couple of years but Kotlin and TypeScript have since taken over my life <3. I do dabble in Golang and Rust though!
+             JavaScript was my first language and I used it for a couple of years but Kotlin and TypeScript have since taken over my life {"<3"}. I do dabble in Golang and Rust though!
         </p>
     </section>
 
