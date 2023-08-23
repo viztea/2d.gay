@@ -16,8 +16,8 @@ export const projects: Project[] = [
         name: "lavaclient",
         description: "A simple, easy-to-use, and flexible lavalink client for node.js",
         links: [
-            { name: "Website", url: "https://lavaclient.js.org",                icon: "ph:link-bold" },
-            { name: "NPM",     url: "https://npmjs.com/package/lavaclient",     icon: "ri:npm-fill" },
+            { name: "Website", url: "https://lavaclient.js.org",                icon: "ri:external-link-fill" },
+            { name: "NPM",     url: "https://npmjs.com/package/lavaclient",     icon: "ri:npmjs-fill" },
             { name: "GitHub",  url: "https://github.com/lavaclient/lavaclient", icon: "ri:github-fill" },
         ],
         languages: ["TypeScript"]
@@ -34,7 +34,7 @@ export const projects: Project[] = [
         name: "usagi",
         description: "🐰 kotlin multi-platform rabbitmq/amqp client",
         links: [
-            { name: "Website", url: "https://dimensional-fun.github.io/usagi",  icon: "ph:link-bold" },
+            { name: "Website", url: "https://dimensional-fun.github.io/usagi",  icon: "ri:external-link-filld" },
             { name: "GitHub",  url: "https://github.com/dimensional-fun/usagi", icon: "ri:github-fill" },
         ],
         languages: ["Kotlin"]
@@ -43,7 +43,7 @@ export const projects: Project[] = [
         name: "kedis",
         description: "🗃️ kotlin multi-platform redis client",
         links: [
-            { name: "Website", url: "https://dimensional-fun.github.io/kedis",  icon: "ph:link-bold" },
+            { name: "Website", url: "https://dimensional-fun.github.io/kedis",  icon: "ri:external-link-fill" },
             { name: "GitHub",  url: "https://github.com/dimensional-fun/kedis", icon: "ri:github-fill" },
         ],
         languages: ["Kotlin"]
