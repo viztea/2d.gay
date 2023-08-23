@@ -22,28 +22,28 @@
                 href="mailto:{email}"
                 title="Send me an Email"
             >
-                <Icon icon="eva:email-fill" />
+                <Icon icon="ri:mail-fill" />
             </a>
             <a
                 class="hover:text-zinc-100/90 transition ease-in-out text-xl"
                 href={discord}
                 title="Discord Server"
             >
-                <Icon icon="prime:discord" />
+                <Icon icon="ri:discord-fill" />
             </a>
             <a
                 class="hover:text-zinc-100/90 transition ease-in-out text-xl"
                 href="https://twitter.com/melike2d"
                 title="Twitter Account"
             >
-                <Icon icon="prime:twitter" />
+                <Icon icon="ri:twitter-fill" />
             </a>
             <a
                 class="hover:text-zinc-100/90 transition ease-in-out text-xl"
                 href="https://github.com/melike2d"
                 title="GitHub Profile"
             >
-                <Icon icon="prime:github" />
+                <Icon icon="ri:github-fill" />
             </a>
         </div>
     </div>
