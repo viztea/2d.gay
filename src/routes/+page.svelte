@@ -14,19 +14,16 @@
             <img src="/img.avif" alt="logo-ish?" class="w-16 h-16 rounded-full" />
             <div class="flex flex-col">
                 <h1 class="font-black text-lg sm:text-xl md:text-2xl lg:text-3xl text-white">Gino</h1>
-                <span class="text-zinc-100 text-sm sm:text-base">A full-stack developer from California.</span>
+                <span class="text-zinc-100 text-sm sm:text-base">A full-stack software developer from California.</span>
             </div>
         </div>
     
         <p>
-            I've been coding since I was <strong>13</strong>. My primary 
-            languages are Kotlin and TypeScript, but I also use Go and Rust.
+            I was born in California about 18 years ago. Even though I have only been coding for ~5 years, I've written my fair share of APIs, Websites, Discord Applications, and open-source libraries.        
         </p>
-    
+        
         <p>
-            I also do some web development with React, Vue, and Svelte. 
-            Want to know a fun fact? I've rewritten my portfolio almost 
-            a dozen times, rotating between HTML/CSS, <a href="https://www.gatsbyjs.com">Gatsby</a>, <a href="https://nextjs.org">Next.js</a>, and <a href="https://kit.svelte.dev">SvelteKit</a>.
+             I used JavaScript for a couple of years until Kotlin and TypeScript took over my life {"<3"}. However, I do dabble in Golang and Rust :D
         </p>
     </section>
 
@@ -75,6 +72,10 @@
     <section class="space-y-2">
         <h2 class="font-black text-xl mb-2">Contact</h2>
 
+        <p>If you (for some reason) need to contact me, my email address is <a href="mailto:{email}">{email}</a>.</p>
+        <p>P.S. If I do not know you I will not respond to your DMs</p>
+
+        <!--
         <p>
             If you need to contact me, I recommend joining my <a href={discord}>Discord server</a> for the quickest response.
         </p>
@@ -82,6 +83,7 @@
         <p>
             However, you can always email me at <a href="mailto:{email}">{email}</a> but do not expect a quick response.
         </p>
+        -->
     </section>
 </div>
 

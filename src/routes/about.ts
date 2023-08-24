@@ -16,9 +16,9 @@ export const projects: Project[] = [
         name: "lavaclient",
         description: "A simple, easy-to-use, and flexible lavalink client for node.js",
         links: [
-            { name: "Website", url: "https://lavaclient.js.org",                icon: "ph:link-bold" },
-            { name: "NPM",     url: "https://npmjs.com/package/lavaclient",     icon: "eva:npm-fill" },
-            { name: "GitHub",  url: "https://github.com/lavaclient/lavaclient", icon: "eva:github-fill" },
+            { name: "Website", url: "https://lavaclient.js.org",                icon: "ri:external-link-fill" },
+            { name: "NPM",     url: "https://npmjs.com/package/lavaclient",     icon: "ri:npmjs-fill" },
+            { name: "GitHub",  url: "https://github.com/lavaclient/lavaclient", icon: "ri:github-fill" },
         ],
         languages: ["TypeScript"]
     },
@@ -26,7 +26,7 @@ export const projects: Project[] = [
         name: "kantoku",
         description: "📡 discord http interactions server written in golang",
         links: [
-            { name: "GitHub",  url: "https://github.com/dimensional-fun/kantoku", icon: "eva:github-fill" },
+            { name: "GitHub",  url: "https://github.com/dimensional-fun/kantoku", icon: "ri:github-fill" },
         ],
         languages: ["Go"]
     },
@@ -34,8 +34,8 @@ export const projects: Project[] = [
         name: "usagi",
         description: "🐰 kotlin multi-platform rabbitmq/amqp client",
         links: [
-            { name: "Website", url: "https://dimensional-fun.github.io/usagi",  icon: "ph:link-bold" },
-            { name: "GitHub",  url: "https://github.com/dimensional-fun/usagi", icon: "eva:github-fill" },
+            { name: "Website", url: "https://dimensional-fun.github.io/usagi",  icon: "ri:external-link-filld" },
+            { name: "GitHub",  url: "https://github.com/dimensional-fun/usagi", icon: "ri:github-fill" },
         ],
         languages: ["Kotlin"]
     },
@@ -43,11 +43,19 @@ export const projects: Project[] = [
         name: "kedis",
         description: "🗃️ kotlin multi-platform redis client",
         links: [
-            { name: "Website", url: "https://dimensional-fun.github.io/kedis",  icon: "ph:link-bold" },
-            { name: "GitHub",  url: "https://github.com/dimensional-fun/kedis", icon: "eva:github-fill" },
+            { name: "Website", url: "https://dimensional-fun.github.io/kedis",  icon: "ri:external-link-fill" },
+            { name: "GitHub",  url: "https://github.com/dimensional-fun/kedis", icon: "ri:github-fill" },
         ],
         languages: ["Kotlin"]
     },
+    {
+        name: "nats.kt",
+        description: "🛰️ kotlin multi-platform NATS client",
+        links: [
+            { name: "GitHub", url: "https://github.com/dimensional-fun/nats.kt", icon: "ri:github-fill" },
+        ],
+        languages: ["Kotlin"]
+    }
 ]
 
 export const languages: Record<string, { icon: string, color: string }> = {
