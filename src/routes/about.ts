@@ -23,6 +23,14 @@ export const projects: Project[] = [
         languages: ["TypeScript"]
     },
     {
+        name: "krypton",
+        description: "🎹 audio player library for kotlin",
+        links: [
+            { name: "GitHub", url: "https://github.com/krypton-lib/krypton", icon: "ri:github-fill" }
+        ],
+        languages: ["Kotlin"]
+    },
+    {
         name: "kantoku",
         description: "📡 discord http interactions server written in golang",
         links: [
@@ -43,7 +51,7 @@ export const projects: Project[] = [
         name: "kedis",
         description: "🗃️ kotlin multi-platform redis client",
         links: [
-            { name: "Website", url: "https://dimensional-fun.github.io/kedis",  icon: "ri:external-link-fill" },
+            // { name: "Website", url: "https://dimensional-fun.github.io/kedis",  icon: "ri:external-link-fill" },
             { name: "GitHub",  url: "https://github.com/dimensional-fun/kedis", icon: "ri:github-fill" },
         ],
         languages: ["Kotlin"]

@@ -14,7 +14,7 @@
     <Track />
     <div class="flex items-center justify-between">
         <span class="hover:text-zinc-100/90 transition ease-in-out select-none">
-            melike2d &copy; 2018 - {date.getFullYear()}
+            viztea &copy; 2018 - {date.getFullYear()}
         </span>
         <div class="flex space-x-2 items-center text-lg">
             <a
@@ -40,7 +40,7 @@
             </a>
             <a
                 class="hover:text-zinc-100/90 transition ease-in-out text-xl"
-                href="https://github.com/melike2d"
+                href="https://github.com/viztea"
                 title="GitHub Profile"
             >
                 <Icon icon="ri:github-fill" />
