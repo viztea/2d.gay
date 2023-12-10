@@ -16,7 +16,7 @@
 <!-- TODO: clean this up... -->
 
 <div class="flex items-center space-x-2">
-    <Icon class="text-base" icon="simple-icons:lastfm" />
+    <Icon class="text-base" icon="simple-icons:lastdotfm" />
     {#if $track.isLoading}
         <span class="text-base"><Spinner /></span>
     {:else if $track.isError}
