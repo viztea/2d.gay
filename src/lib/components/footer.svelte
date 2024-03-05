@@ -33,10 +33,10 @@
             </a>
             <a
                 class="hover:text-zinc-100/90 transition ease-in-out text-xl"
-                href="https://twitter.com/melike2d"
-                title="Twitter Account"
+                href="https://x.com/aetziv"
+                title="X (Twitter) Account"
             >
-                <Icon icon="ri:twitter-fill" />
+                <Icon icon="ri:twitter-x-fill" />
             </a>
             <a
                 class="hover:text-zinc-100/90 transition ease-in-out text-xl"
