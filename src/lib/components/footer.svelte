@@ -36,7 +36,7 @@
                 href="https://x.com/aetziv"
                 title="X (Twitter) Account"
             >
-                <Icon icon="ri:twitter-x-fill" />
+                <Icon icon="ri:twitter-fill" />
             </a>
             <a
                 class="hover:text-zinc-100/90 transition ease-in-out text-xl"
