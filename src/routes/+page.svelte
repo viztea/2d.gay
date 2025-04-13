@@ -13,13 +13,13 @@
         <div class="flex space-x-4 items-center">
             <img src="/img.avif" alt="logo-ish?" class="w-16 h-16 rounded-full" />
             <div class="flex flex-col">
-                <h1 class="font-black text-lg sm:text-xl md:text-2xl lg:text-3xl text-white">Gino</h1>
+                <h1 class="font-black text-lg sm:text-xl md:text-2xl lg:text-3xl text-white">viztea</h1>
                 <span class="text-zinc-100 text-sm sm:text-base">A full-stack software developer from California.</span>
             </div>
         </div>
     
         <p>
-            I was born in California about 18 years ago. Even though I have only been coding for ~5 years, I've written my fair share of APIs, Websites, Discord Applications, and open-source libraries.        
+            I was born in California about 20 years ago. Even though I have only been coding for ~7 years, I've written my fair share of APIs, Websites, Discord Applications, and open-source libraries.        
         </p>
         
         <p>
